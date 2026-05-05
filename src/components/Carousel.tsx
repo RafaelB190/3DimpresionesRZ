@@ -19,7 +19,7 @@ export default function Carousel() {
   const prev = () => setCurrent((prev) => (prev - 1 + featuredProducts.length) % featuredProducts.length);
 
   return (
-    <div className="relative w-full h-96 md:h-[500px] bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl overflow-hidden">
+    <div className="relative w-full h-96 md:h-[500px] bg-gradient-to-r from-primary to-purple-600 rounded-2xl overflow-hidden">
       {featuredProducts.map((product, index) => (
         <div
           key={product.id}
@@ -29,15 +29,12 @@ export default function Carousel() {
         >
           <div className="flex h-full">
             <div className="w-full md:w-1/2 flex flex-col justify-center px-8 md:px-16 text-white">
-              <span className="text-sm uppercase tracking-wider mb-2 opacity-80">Producto Destacado</span>
+              <span className="text-sm uppercase tracking-wider mb-2 opacity-80">{"Producto Destacado"}</span>
               <h2 className="text-3xl md:text-5xl font-bold mb-4">{product.name}</h2>
               <p className="text-lg mb-6 opacity-90">{product.description}</p>
-              <div className="flex items-center gap-4">
-                <span className="text-4xl font-bold">${product.price.toLocaleString()}</span>
-                <button className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Ver Producto
-                </button>
-              </div>
+              <button className="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors w-fit">
+                {"Consultar"}
+              </button>
             </div>
             <div className="hidden md:flex w-1/2 items-center justify-center p-8">
               <img

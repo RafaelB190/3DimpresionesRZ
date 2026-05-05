@@ -18,17 +18,14 @@ export default function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="p-4">
         <h3 className="font-semibold text-lg text-gray-800 mb-1">{product.name}</h3>
-        <p className="text-gray-500 text-sm mb-2 line-clamp-2">{product.description}</p>
-        <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-primary">${product.price.toLocaleString()}</span>
-          <button
-            onClick={() => addToCart(product)}
-            className="bg-primary hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            Agregar
-          </button>
-        </div>
+        <p className="text-gray-500 text-sm mb-3 line-clamp-2">{product.description}</p>
+        <button
+          onClick={() => addToCart(product)}
+          className="w-full bg-primary hover:bg-secondary text-white px-4 py-2 rounded-lg flex items-center justify-center gap-2 transition-colors"
+        >
+          <Plus className="w-4 h-4" />
+          Agregar
+        </button>
       </div>
     </div>
   );

@@ -40,10 +40,10 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Link href="/carrito" className="relative p-2 text-gray-700 hover:text-primary transition">
+            <Link href="/carrito" className="relative bg-primary hover:bg-secondary text-white p-2 rounded-full transition-colors shadow-lg">
               <ShoppingCart className="w-6 h-6" />
               {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-white text-primary text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold shadow">
                   {cartCount}
                 </span>
               )}
