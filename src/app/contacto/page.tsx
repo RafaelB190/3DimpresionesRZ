@@ -113,7 +113,7 @@ export default function ContactoPage() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                  placeholder="{"Tu nombre"}"
+                  placeholder={"Tu nombre"}
                 />
               </div>
 
@@ -125,7 +125,7 @@ export default function ContactoPage() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                  placeholder="{"tu@email.com"}"
+                  placeholder={"tu@email.com"}
                 />
               </div>
 
@@ -148,7 +148,7 @@ export default function ContactoPage() {
                   value={formData.mensaje}
                   onChange={(e) => setFormData({ ...formData, mensaje: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition resize-none"
-                  placeholder="{"Contanos sobre tu proyecto o consulta..."}"
+                  placeholder={"Contanos sobre tu proyecto o consulta..."}
                 />
               </div>
 
